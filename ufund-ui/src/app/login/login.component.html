@@ -1,0 +1,26 @@
+<h2>Sign-in</h2>
+<div class="border">
+  <div class = "username-box">
+    <input id="username" type="text" name="text" class="input" placeholder="username" #username />
+  </div>
+  <div class="password-box">
+    <input id="password" type="password" name="text" class="input" placeholder="password" #password />
+  </div>
+  <div class="error">{{ errorMsg }}</div>
+  <button type="button" class="add-button" (click)="login(username.value, password.value); username.value=''; password.value='';">
+    Login
+  </button>
+</div>
+  
+  <!-- (click) passes input value to add() and then clears the input -->
+  <!-- when click is pressed make a fnc that checks if the user is admin then calls add()-->
+  
+
+
+
+<!-- <div class="box-input">
+  <div class="border">
+    <input type="text" name="text" class="input" placeholder="Name">
+  </div>
+</div> -->
+
